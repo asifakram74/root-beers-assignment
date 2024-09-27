@@ -1,0 +1,1930 @@
+/** @format */
+a {
+  text-decoration: none;
+}
+
+.custom-sidebar-link {
+  width: 100%;
+}
+
+body {
+  font-family: Verdana, sans-serif;
+  background-color: #f5f5f5;
+  color: rgba(76, 78, 100, 0.87);
+  overflow-x: hidden;
+}
+
+button {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.4px;
+}
+
+/*-- Login Page --*/
+.login-container {
+  width: 450px;
+  background: white;
+  margin: 0 auto;
+  color: rgba(76, 78, 100, 0.87);
+  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  border-radius: 10px;
+  background-image: none;
+  overflow: hidden;
+  box-shadow: rgb(76 78 100 / 22%) 0px 2px 10px 0px;
+  z-index: 1;
+}
+
+.css-m6djc-MuiPaper-root-MuiCard-root {
+  color: #4c4e64;
+}
+
+.css-vxvn8u-MuiTypography-root {
+  color: #4c4e64;
+  font-weight: 500;
+}
+
+.css-honmcm-MuiGrid-root > .MuiGrid-item {
+  padding-left: 25px;
+  margin-bottom: -20px;
+}
+
+@media (min-width: 1200px)
+{
+.css-c8h269-MuiContainer-root {
+    max-width: 1270px !important;
+}
+}
+
+.login-main {
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  padding: 1.25rem;
+}
+
+.login-page-logo .MuiBox-root.css-17kxzui {
+  justify-content: start;
+}
+
+
+
+.MuiCardContent-root.card-content {
+  padding: 32px 28px;
+}
+
+.card-content h5 {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 32px;
+  margin-bottom: 8px;
+  letter-spacing: 0.18px;
+  color: rgba(76, 78, 100, 0.87);
+}
+
+
+.permission-box {
+  width: 75%;
+}
+
+.permission-button {
+  margin-top: 20px;
+}
+
+.creat-permission {
+  margin-right: 25px;
+}
+
+.card-content p {
+  font-family: initial;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.15px;
+  color: rgba(76, 78, 100, 0.68);
+}
+
+.login-content {
+  padding: 24px 0;
+}
+
+p.form-error {
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 1.25;
+  letter-spacing: 0.4px;
+  text-align: left;
+  color: #ff4d49;
+  margin-top: 10px;
+}
+
+a.navbar-brand.logo {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  /* or 143% */
+  display: flex;
+  align-items: center;
+  text-align: right;
+  letter-spacing: 0.15px;
+
+  /* Light/Primary/Main */
+  color: #ff4d49;
+  opacity: 1;
+  text-decoration: none;
+}
+
+.submit-btn {
+  margin-top: 16px !important;
+  background-color: #ff4d49 !important;
+  font-weight: 700;
+  font-size: 0.9375rem;
+  line-height: 1.75;
+  letter-spacing: 0.02857em;
+  text-transform: uppercase;
+  padding: 8px 22px;
+  border-radius: 4px;
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-decoration: none;
+  border: unset;
+  cursor: pointer;
+}
+
+.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #ff4d49 !important;
+  border-width: 2px;
+}
+
+.css-1sumxir-MuiFormLabel-root-MuiInputLabel-root.Mui-focused {
+  color: #ff4d49 !important;
+}
+
+.loginbg {
+  bottom: 10%;
+  right: 0;
+  width: 100%;
+
+  position: absolute;
+}
+
+/* Side Bar */
+/* Logo */
+.Sidebarbg {
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+}
+
+.Sidebarbg
+  .MuiPaper-root.MuiPaper-elevation.MuiPaper-elevation0.MuiDrawer-paper.MuiDrawer-paperAnchorLeft.MuiDrawer-paperAnchorDockedLeft {
+  transition: none;
+  box-shadow: none;
+  border: none;
+  background: unset;
+}
+
+/* .cr-roles {
+  margin-left: -25px;
+} */
+
+@media (min-width: 600px) {
+  .cr-manageDesign .css-1kb2msf-MuiDialogContent-root {
+    padding: 20px;
+  }
+}
+
+.cE-draft-email-heading h2 {
+  padding: 20px;
+}
+
+.logo {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Logodiv {
+  display: flex;
+}
+
+.logo img {
+  width: 75%;
+}
+
+.role-btn-submit {
+  margin-right: 25px;
+}
+
+.demo-space-x.roles-button {
+  margin-bottom: 30px;
+  
+}
+
+.role-pdm {
+  padding-bottom: 60px;
+}
+
+.marginPage {
+  margin-left: -60px;
+}
+
+.imgRotate {
+  transform: rotate(180deg);
+  transition: 0.8s;
+}
+.btn-operator {
+  background: #ff4d49;
+  border-radius: 6px;
+  color: #ffffff;
+  margin-right: 24px;
+  font-weight: 400;
+  border: 1px solid #ff4d49;
+  padding: 10px 20px;
+}
+
+.logo .Darrow {
+  width: 13px;
+  height: 13px;
+  cursor: pointer;
+  transition: 0.8s;
+}
+
+.logo p {
+  color: rgba(76, 78, 100, 0.87);
+  margin: 0 0 0 10px;
+}
+
+.NewClass {
+  display: flex;
+  flex-direction: column;
+}
+
+.ListStyle {
+  display: unset;
+  padding: 0;
+  margin: 8px 8px 8px 0;
+  border-radius: 8px;
+}
+
+.ListStyle:hover {
+  color: rgba(76, 78, 100, 0.87);
+}
+
+.ListStyle a:hover,
+.ListStyle div:hover {
+  color: unset;
+  background-color: rgba(145, 158, 171, 0.08);
+}
+
+.NewClass .ListStyle .active img {
+  filter: invert(100%) sepia(16%) saturate(7463%) hue-rotate(196deg) brightness(134%) contrast(115%);
+}
+
+.NewClass .ListStyle :hover img {
+  filter: unset;
+}
+
+.ArrowIcon {
+  width: 12px;
+  height: 12px;
+  margin: 0 12px 0 0;
+  transition: transform 0.25s ease-in-out 0s;
+}
+
+.ArrowIconhover {
+  width: 12px;
+  height: 12px;
+  margin: 0 12px 0 0;
+  transition: transform 0.25s ease-in-out 0s;
+  transform: rotate(90deg);
+}
+
+/* Top Header */
+
+/* charts Start*/
+#container {
+  height: 400px;
+}
+
+.highcharts-figure,
+.highcharts-data-table table {
+  min-width: 310px;
+  max-width: 800px;
+  margin: 1em auto;
+}
+
+.dashbaord-area-chart,
+.dashboard-line-chart {
+  margin-top: 40px;
+  margin-left: 18px;
+}
+
+.highcharts-data-table table {
+  font-family: Verdana, sans-serif;
+  border-collapse: collapse;
+  border: 1px solid #ebebeb;
+  margin: 10px auto;
+  text-align: center;
+  width: 100%;
+  max-width: 500px;
+}
+
+.css-pa8eo7 .recharts-cartesian-axis-tick-value,
+.css-pa8eo7 .recharts-polar-radius-axis-tick-value {
+  fill: #848688;
+  font-size: 12px;
+}
+
+.css-8ebtji-MuiTypography-root {
+  font-size: 16px;
+  font-weight: 600;
+  color: rgba(76, 78, 100, 0.87);
+}
+
+.css-17pmaar-MuiCardContent-root {
+  padding: 27px 24px;
+}
+
+.react-datepicker {
+  padding: 0.5rem 0rem;
+  color: rgba(76, 78, 100, 0.87);
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgb(76 78 100 / 22%) 0px 2px 10px 0px;
+  border: none;
+}
+
+.react-datepicker__header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #ffffff;
+}
+
+.css-ag8k2b-MuiInputBase-root-MuiOutlinedInput-root {
+  width: 80%;
+  margin: 0 -64px 0 40px;
+}
+
+.dataCanvas {
+  height: 405px !important;
+}
+
+.highcharts-data-table caption {
+  padding: 1em 0;
+  font-size: 1.2em;
+  color: #555;
+}
+
+.highcharts-data-table th {
+  font-weight: 600;
+  padding: 0.5em;
+}
+
+.highcharts-data-table td,
+.highcharts-data-table th,
+.highcharts-data-table caption {
+  padding: 0.5em;
+}
+
+.highcharts-data-table thead tr,
+.highcharts-data-table tr:nth-child(even) {
+  background: #f8f8f8;
+}
+
+.highcharts-data-table tr:hover {
+  background: #f1f7ff;
+}
+/* charts End*/
+
+/* Text in Search */
+.Header {
+  background: #f7f7f9;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+}
+
+.Header-style {
+  min-height: unset;
+  padding: 12px 24px;
+}
+
+.headersearchtext {
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 40px;
+  color: rgba(76, 78, 100, 0.87);
+}
+
+.MenuItem {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  color: #ff4d49;
+}
+
+.hd-role h4 {
+  padding: 0 0px 0 20px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.addRole_heading {
+  padding-top: 0 !important;
+  padding-left: 0 !important;
+  font-size: 24px !important;
+  color: rgba(76, 78, 100, 0.87) !important;
+  font-weight: 500 !important;
+  line-height: 133.4% !important;
+}
+
+.roleList-heading h2
+{
+  font-size: 24px;
+  color: rgba(76, 78, 100, 0.87);
+  font-weight: 500;
+  line-height: 133.4%;
+  margin-top: 0;
+}
+
+.swal2-container {
+  z-index: 9999;
+}
+
+
+.avatarDiv {
+  font-size: 17px !important;
+}
+.table-body td {
+  color: rgba(76, 78, 100, 0.87);
+  border-bottom: 0;
+}
+
+.MenuItem {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  color: #ff4d49;
+}
+
+/* Modal */
+.MuiModal-root.MuiDrawer-root.MuiDrawer-modal .MuiBackdrop-root {
+  background: rgba(76, 78, 100, 0.5);
+}
+
+/* Role Page */
+/* .RoleCard {
+  transition: none;
+  padding-bottom: 30px;
+} */
+
+.RolePageHeading {
+  background-color: #f1f2ff;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 32px;
+  letter-spacing: 0.15px;
+  color: rgba(76, 78, 100, 0.87);
+  padding: 15px 30px;
+}
+
+/* .RoleCardBody {
+  padding: 30px 30px 0;
+} */
+
+.RoleCardButton {
+  padding: 0 30px;
+}
+
+.BoxWidth {
+  margin-bottom: 30px;
+}
+
+.TextAreaWidth {
+  width: 100%;
+}
+
+.DateFullWidth {
+  width: 100%;
+}
+
+.SaveButton,
+.SaveButton:hover {
+  color: #ffffff !important;
+  background-color: #ff4d49;
+}
+
+.cE-email-dflex {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.cE-customAvatar {
+  border-radius: 40px;
+}
+
+.cE-customAvatar span {
+  font-size: 12px;
+}
+
+.email_code_version {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.88), rgba(255, 255, 255, 0.88)), #ff4d49;
+  margin-right: 5px;
+  font-size: 12px;
+}
+
+.demo-space-x {
+  margin-bottom: 30px;
+}
+
+.UsersButton,
+.UsersButton:hover {
+  margin-right: 24px;
+  padding: 5px 22px;
+}
+
+.Users .Users:hover {
+  padding: 5px 22px;
+}
+
+.ButtonLeftAlign {
+  text-align: right;
+}
+
+.card-header-top button {
+  color: rgba(76, 78, 100, 0.87);
+  border: 1px solid rgba(76, 78, 100, 0.22);
+  margin: 11px 20px;
+}
+
+.user-filter-btn button:hover {
+  background: #ff4d49;
+  color: #f1f2ff;
+}
+
+.card-header-top {
+  background: #f1f2ff;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.card-body-user {
+  margin: 11px 20px;
+  padding: 20px 0;
+}
+
+.user-filter-btn button {
+  background: #ff4d49;
+  border-radius: 6px;
+  color: #ffffff;
+  margin-right: 24px;
+  font-weight: 400;
+}
+
+/* .userbuttonshead {
+  text-align: right;
+} */
+
+/* .userbuttonshead button,
+.toggle-users-buttons button {
+  color: #FF4D49;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.4px;
+  border-color: rgba(102, 108, 255, 0.5);
+  box-shadow: unset;
+} */
+
+.UserButtonMargin {
+  margin-right: 24px;
+}
+
+.MarginUserButtonDiv {
+  padding-bottom: 10px;
+}
+
+.userbuttonshead button.right-last-btn,
+.toggle-users-buttons button.right-last-btn {
+  background: #ff4d49;
+  color: #fff;
+  padding: 5px 25px;
+}
+
+.user-top-card {
+  margin-bottom: 24px;
+  position: unset;
+  overflow: unset;
+}
+
+.BoxWidth .MuiFormControl-root.MuiTextField-root {
+  width: 100%;
+}
+
+.EmailBoxWidth {
+  margin-bottom: 0;
+}
+
+.ListStyle .MuiCollapse-vertical a.active .MuiListItemIcon-root span {
+  background-color: white;
+}
+
+.pagination-main-div {
+  display: flex;
+    justify-content: flex-end;
+    padding: 20px 18px
+}
+
+/* Left Button */
+.left-button button {
+  color: #ff4d49;
+  border: 1px solid #ff4d49;
+}
+
+/* User List Of Operators */
+.ContainerPagePadding {
+  padding: 0;
+}
+
+.PaddingTopOfThePage {
+  padding-top: 85px;
+}
+
+a.table-link {
+  color: rgba(76, 78, 100, 0.87);;
+  text-decoration: none;
+} 
+
+.dash-description p {
+  margin-bottom: 15px;
+}
+
+.operator_checkbox_list h2 {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 12px;
+  margin: 0 32px 0 0;
+}
+
+.operator_checkbox_list .check_box span {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/* Login */
+.LabelWidth {
+  width: unset;
+}
+
+/* User Overview Page */
+.reset-button {
+  color: #ff4d49;
+}
+
+/* Progress Prop */
+.Heading-p {
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 40px;
+  letter-spacing: 0.25px;
+  color: rgba(76, 78, 100, 0.87);
+}
+
+.HeadingBox {
+  display: flex;
+  justify-content: space-between;
+}
+
+.HeadingBox img {
+  width: 40px;
+  height: 40px;
+  margin-right: 15px;
+}
+
+.HeadingBox h2 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: 0.15px;
+  color: rgba(76, 78, 100, 0.87);
+}
+
+.HeadingBox p {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.4px;
+  color: rgba(76, 78, 100, 0.68);
+}
+
+.dash-progress .ProgressMainDiv {
+  max-width: 240px;
+}
+
+.dash-e2description p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+}
+
+.ProgressMainDiv {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  padding: 15px 12px;
+  width: 100%;
+  max-width: 335px;
+  margin: 15px 0;
+  box-shadow: 0px 2px 20px rgba(76, 78, 100, 0.1);
+}
+
+/* Customer Page */
+/* Add Fields On Click */
+.AddGridPadding {
+  padding: 0 0 0 15px;
+}
+
+.AddGridHeading {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(76, 78, 100, 0.87);
+  margin-bottom: 15px;
+}
+
+.AddGrid {
+  background-color: #f1f2ff;
+  border: 1px solid #f1f2ff;
+  border-radius: 10px;
+  padding: 25px 20px;
+}
+
+.AddInputDiv {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+
+.AddInputDiv input {
+  padding: 15px;
+  border: 1px solid #d8d8dd;
+  border-radius: 8px;
+}
+
+.RomoveButton {
+  background-color: #ffffff;
+  padding: 15px;
+  border: 1px solid #d8d8dd;
+  border-radius: 8px;
+}
+
+/* Payment History List */
+.PaymentHistoryList .ProgressMainDiv {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  padding: 15px 12px;
+  width: 100%;
+  max-width: 250px;
+  margin: 15px 0;
+}
+
+/* Payment Information */
+.TickButoondiv {
+  display: flex;
+}
+
+.PaymentInformationButton {
+  text-align: right;
+}
+
+.TickButton {
+  background-color: #ffffff;
+  padding: 18px;
+  border: 1px solid #d8d8dd;
+  border-radius: 8px;
+  margin-right: 10px;
+}
+
+/* Service Setting */
+.ServiceSetting {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.LabelFullWidth {
+  width: 100%;
+  margin-top: 7px;
+}
+
+/* Inquiry */
+.InquiryCardList {
+  transition: none;
+  padding-bottom: 30px;
+  margin-top: 20px;
+}
+
+.InquiryAddInputDiv {
+  display: flex;
+  justify-content: space-between;
+}
+
+.InquiryFields {
+  background-color: #ffffff;
+  width: 100%;
+  margin: 0;
+  border-radius: 8px;
+}
+
+.InquiryAddFieldButton {
+  text-align: right;
+}
+
+/* Information List */
+.RightSideButton {
+  justify-content: flex-end;
+}
+
+/* NoticeList */
+.ButtonMargin {
+  margin-right: 25px;
+}
+
+/* Customer Information 2 */
+.align-flex-end {
+  align-items: flex-end;
+}
+
+.Customer-list-filter {
+  margin: 20px 0 0;
+}
+
+.customer-imformation-div {
+  padding: 20px 18px;
+  text-align: right;
+  color: #ff4d49de;
+}
+
+.customer-imformation-div h1 {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 32px;
+  letter-spacing: 0.15px;
+  color: rgba(76, 78, 100, 0.87);
+  text-align: left;
+}
+
+/* Customer Information 2 */
+.bottom-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* PAyment History List Drop Down Filter Component */
+.DropDownCheck {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Range {
+  display: flex;
+}
+
+.Arrangediv {
+  display: flex;
+  align-items: center;
+}
+
+.Arrangediv h2 {
+  color: rgba(76, 78, 100, 0.87);
+  margin: 0 10px;
+}
+
+.MaxWidth {
+  width: 20%;
+  margin-right: 0;
+}
+
+.filter-submit-buttons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.filter-submit-buttons button {
+  color: #ff4d49;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.4px;
+  border-color: rgba(102, 108, 255, 0.5);
+  box-shadow: unset;
+}
+
+.filter-submit-buttons .right-last-btn {
+  background: #ff4d49;
+  color: #f1f2ff;
+}
+
+/* Operator Lists Drop Down */
+.operator_checkbox_list {
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  color: rgba(76, 78, 100, 0.87);
+  margin-top: 45px;
+}
+
+.operator_box_heading h2 {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 12px;
+  letter-spacing: 0.15px;
+  color: rgba(76, 78, 100, 0.68);
+  margin-right: 30px;
+}
+
+.custom01 label {
+  position: relative;
+  display: inline-block;
+  padding: 0px 0px 0px 20px;
+  cursor: pointer;
+  color: rgba(76, 78, 100, 0.87);
+  position: relative;
+  top: -5px;
+}
+
+.custom01 input[type='checkbox'] {
+  width: 21px;
+  height: 21px;
+}
+
+.rmdp-input {
+  height: 3.9em;
+  border: 1px solid #d5cdcdf2;
+  padding-left: 20px;
+}
+
+.operator-flex {
+  display: flex;
+  align-items: center;
+}
+
+/* Card Payment */
+.pay-horizental-heading img {
+  width: 80px;
+  padding-top: 0;
+}
+
+.pay-main-content {
+  padding: 30px 20px;
+  background: #ffffff;
+  box-shadow: 0px 0px 50px rgb(0 0 0 / 10%);
+  width: 400px;
+  margin: 0 auto;
+  border-radius: 30px;
+}
+
+button.btn.btn-theme-pay:hover {
+  color: #ffffff;
+}
+
+.pay-button button {
+  width: 100%;
+  background: #0a2540;
+  color: #ffffff;
+  /* margin-bottom: 50px; */
+  font-size: 18px;
+  border-radius: 7px;
+  padding: 6px 0;
+  border: 0;
+}
+
+.pay-card-content form .form-group label {
+  width: 100%;
+  font-weight: 500;
+  padding-bottom: 8px;
+  display: block;
+  color: #425466;
+}
+
+.pay-card-content form .form-group input {
+  outline: 0;
+}
+
+.pay-cvs-date {
+  display: flex;
+  justify-content: space-around;
+}
+
+.pay-card-content form .form-group select {
+  width: 100%;
+  height: 40px;
+  border: 1px solid #ced4da;
+  border-radius: 5px 5px 0 0;
+  outline: 0;
+  padding-left: 10px;
+  padding-right: 15px;
+  color: #8d8787;
+  border-bottom: 0;
+}
+
+.pay-section {
+  width: 100%;
+  height: calc(100vh);
+  display: flex;
+  justify-content: center;
+  padding: 0px 0 0;
+  align-items: center;
+}
+
+.pay-payment-method {
+  border: 1px solid;
+}
+
+.pay-select-payment-card {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 14px;
+  border-bottom: 1px solid #c1bfbf;
+}
+
+.pay-payment-heading input {
+  border: 0;
+}
+
+.pay-payment-method {
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  /* margin-top: 24px; */
+  /* padding: 0 3px; */
+}
+
+.pay-payment-method .col-lg-6:first-child {
+  padding-right: 0;
+}
+
+.pay-horizental-heading h1 {
+  font-size: 21px;
+  margin: 0;
+  font-weight: 500;
+}
+
+.pay-payment-method .col-lg-6:nth-child(2) {
+  padding-left: 0;
+}
+
+.pay-payment-card-number input.form-control.form-card-number {
+  width: 100%;
+  position: relative;
+  margin-left: 0;
+  height: 35px;
+  border-bottom: 0;
+  border-left: 0;
+  border-right: 0;
+  border-radius: 0 0 5px 0;
+  border-top: 0;
+}
+
+.pay-payment-card-number {
+  position: relative;
+}
+
+.pay-horizental-heading p {
+  margin-bottom: 4px;
+  font-size: 14px;
+  margin-top: 2px;
+}
+
+.pay-default-card {
+  position: absolute;
+  top: 2px;
+  right: 0px;
+}
+
+.pay-payment-date {
+  position: relative;
+  left: -6px;
+}
+
+.pay-default-card img {
+  width: 30px;
+}
+
+.pay-payment-date input.form-control.form-date:focus {
+  box-shadow: 0;
+  outline: 0;
+}
+
+.pay-payment-date input.form-control.form-date {
+  width: 100%;
+  border-top: 0;
+  margin-left: 0;
+  font-size: 14px;
+  box-shadow: 0;
+  outline: 0;
+  border-bottom: 0;
+  border-left: 0;
+  height: 35px;
+  border-radius: 0 0 0 5px;
+  border-color: #c2bdbd;
+}
+
+.pay-card-row span.mastercard,
+.pay-card-row span.amex,
+.pay-card-row span.discover,
+.pay-card-row span.visa {
+  margin-right: 8px;
+}
+
+.form-email {
+  height: 40px;
+  width: 100%;
+  font-size: 14px;
+  color: #8d8787;
+  border-radius: 5px;
+  border: 1px solid #ced4da;
+  padding: 10px;
+  /* margin: 0 0 12px; */
+}
+
+.pay-payment-heading input {
+  padding-top: 10px;
+  font-size: 14px;
+}
+
+.pay-fancy-heading {
+  line-height: 0.5;
+  text-align: center;
+  position: relative;
+  margin: 20px 0;
+}
+
+.pay-fancy-heading h2 {
+  display: inline-block;
+  position: absolute;
+  top: -5px;
+  width: 155px;
+  margin: 0 auto;
+  right: 0;
+  left: 0;
+  font-size: 18px;
+  font-weight: 400;
+  background-color: #ffffff;
+  color: #425466;
+}
+
+.pay-fancy-heading h2:before,
+.pay-fancy-heading h2:after {
+  /* content: ""; */
+  position: absolute;
+  height: 5px;
+  border-top: 1px solid #000000;
+  top: 4px;
+  width: 600px;
+}
+
+.pay-fancy-heading h2:before {
+  right: 110%;
+  width: 75%;
+}
+
+.pay-fancy-heading h2:after {
+  left: 110%;
+  width: 75%;
+}
+
+.pay-horizental-heading {
+  text-align: center;
+}
+
+.form-group {
+  margin: 8px 0 0;
+}
+.css-1buikq3 {
+  color: #425466 !important;
+}
+.pay-button {
+  margin-top: 28px;
+}
+
+div#field-wrapper {
+  position: relative;
+  padding: 0;
+  display: block;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+}
+
+#field-wrapper > :nth-child(1) {
+  position: absolute;
+  right: 10px;
+  top: 9px;
+  z-index: 99;
+  height: 20px;
+}
+
+#field-wrapper > :nth-child(2) {
+  background: rgb(103, 34, 34);
+  width: 100%;
+  margin: 0;
+  display: unset;
+}
+
+#field-wrapper > :nth-child(2)::after,
+#field-wrapper > :nth-child(3)::after {
+  content: unset;
+}
+
+#field-wrapper > :nth-child(3) {
+  background: rgb(39, 155, 95);
+  width: 50%;
+  margin: 0;
+  display: contents;
+  /* padding: 16px; */
+}
+
+#field-wrapper > :nth-child(4) {
+  background: black;
+  width: 50%;
+  margin: 0;
+  display: contents;
+}
+
+#field-wrapper > :nth-child(5) {
+  display: none;
+}
+
+input#card-number {
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  font-size: 14px;
+  color: #8d8787;
+  border-bottom: 1px solid #ced4da;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+}
+
+input#card-expiry {
+  width: 50%;
+  position: unset;
+  padding: 8px;
+}
+
+#field-wrapper .credit-card-input {
+  border: 1px solid red;
+}
+
+#field-wrapper > :nth-child(2) input {
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  font-size: 14px;
+  color: #8d8787;
+  border-bottom: 1px solid #ced4da;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+}
+
+#field-wrapper > :nth-child(3) input {
+  height: 40px;
+  padding: 10px;
+  font-size: 14px;
+  color: #8d8787;
+  border: none;
+  border-right: 1px solid #ced4da;
+}
+
+#field-wrapper > :nth-child(4) input {
+  height: 40px;
+  padding: 10px;
+  border: none;
+  font-size: 14px;
+  color: #8d8787;
+  border: none;
+}
+
+#field-wrapper > :nth-child(4) input {
+  height: 40px;
+  padding: 10px;
+  font-size: 14px;
+  color: #8d8787;
+  border: none;
+  width: 50%;
+}
+
+.hr {
+  height: 1px;
+  border-width: 0px;
+  background-color: #ced4da;
+}
+
+.cardsimage {
+  width: 40%;
+  position: absolute;
+  top: 35px;
+  right: 11px;
+  z-index: 999;
+}
+
+.card-info {
+  position: relative;
+}
+
+@media screen and (max-width: 420px) {
+  .pay-main-content {
+    width: 90%;
+  }
+}
+
+img.csvimage {
+  position: absolute;
+  top: 82px;
+  right: 8px;
+  z-index: 99;
+  width: 30px;
+}
+
+/* .country_region {
+	padding: 0;
+	display: block;
+	border: 1px solid #ced4da;
+	border-radius: 5px;
+} */
+.form-group.country_region input.form-control.form-email {
+  border-radius: 0 0 5px 5px;
+}
+
+/* Double Date */
+.DoubleDateGrid {
+  position: relative;
+}
+
+.DoubleDateCalender {
+  position: absolute;
+  z-index: 1;
+  box-shadow: 0px 0px 20px rgba(76, 78, 100, 0.4);
+}
+
+/* Price1 */
+.PriceAddButton {
+  padding: 5px 50px;
+  color: #ff4d49;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 26px;
+  border: 1px solid rgba(102, 108, 255, 0.5) !important;
+  border-radius: 8px;
+  margin: 5px 0 0;
+}
+
+/* Subscription List*/
+.subscription_quantity {
+  margin-top: 116px;
+  display: flex;
+  align-items: center;
+}
+
+.subscription_quantity div {
+  width: 60px;
+}
+
+.subscription_quantity h2 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  color: rgba(76, 78, 100, 0.87);
+  margin-left: 20px;
+}
+
+.subscription_quantity span {
+  margin-left: 15px;
+}
+
+.filter_margin {
+  margin-top: 50px;
+}
+
+/* Subscription */
+.GridMargin {
+  margin: 55px 0 0 16px;
+}
+
+.AddGridSubscription {
+  background-color: #f1f2ff;
+  border: 1px solid #f1f2ff;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  padding: 25px 20px 0;
+}
+
+.ExtraField {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 30px;
+}
+
+/* Notice */
+.NoticeRightDate {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.NoticeRightDateWidth {
+  width: 50%;
+}
+
+/* Coupon Filter */
+.FilterBlueClass {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f1f2ff;
+  padding: 22px 20px;
+  border-radius: 6px;
+  margin-bottom: 24px;
+}
+
+.FilterBlueClass .BoxWidth {
+  background: #ffffff;
+  border-radius: 6px;
+  margin-bottom: 0;
+}
+
+.CouponCardBody {
+  padding: 0 30px;
+}
+
+/* Report Managemnet */
+/* Report Managemnet Progress component */
+.ReportProgressMainDiv {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  padding: 15px 12px;
+  width: 100%;
+  max-width: 165px;
+  margin: 15px 0;
+}
+
+/* Modal in Report */
+.MainReportModal
+  .MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation24.MuiDialog-paper.MuiDialog-paperScrollBody.MuiDialog-paperWidthSm.css-znizpj-MuiPaper-root-MuiDialog-paper {
+  max-width: 800px;
+  margin: 32px auto;
+  display: block;
+}
+
+.ReportModal {
+  padding: 33px 38px;
+}
+
+.add-role-button {
+  padding-top: 20px;
+  text-align: right;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+
+.add-role-button a:hover,
+.add-role-button a {
+  background: #ff4d49;
+  padding: 10px 20px;
+  font-weight: 400;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.newfield {
+  margin: 20px;
+}
+
+.CloseModal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 28px;
+  color: rgba(76, 78, 100, 0.87);
+}
+
+.CloseModal h2 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 133.4%;
+  padding: 0;
+}
+
+.ModalCross {
+  padding: 0;
+}
+
+.ReportModal .css-ypiqx9-MuiDialogContent-root {
+  padding: 0;
+}
+
+.reportpadding {
+  padding: 25px 0 0;
+}
+
+.ReportSaveButton {
+  display: flex;
+  align-items: center;
+  color: #ff4d49;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 26px;
+  cursor: pointer;
+}
+
+.ReportModal .AddGrid {
+  background-color: #f1f2ff;
+  border: 1px solid #f1f2ff;
+  border-radius: 10px;
+  padding: 25px 20px;
+  margin-bottom: 25px;
+}
+
+.ReportModal .AddInputDiv {
+  margin-bottom: 20px;
+}
+
+/*
+
+.BackgroungModal {
+	background: rgba(76, 78, 100, 0.5);
+	display: flex;
+	align-items: center;
+	overflow-y: scroll;
+}
+
+.BackgroungModal .css-7355d1-MuiBackdrop-root-MuiModal-backdrop {
+	background: none;
+}
+
+
+
+
+.ReportModal {
+	position: absolute;
+	top: 10%;
+	bottom: 0;
+	left: 20%;
+	right: 20%;
+	border: 1px solid #FFFFFF;
+	background: #FFFFFF;
+	box-shadow: 0px 0px 20px rgba(76, 78, 100, 0.4);
+	border-radius: 10px;
+	padding: 33px 38px;
+}
+
+.BackgroungModal h4 {
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 24px;
+	color: rgba(76, 78, 100, 0.87);
+}
+
+.ReportModalAddGrid {
+	background-color: #FFFFFF;
+	border-radius: 6px
+}
+
+.ReportSaveButton p{
+	margin: 0 0 0 13px;
+}
+
+ */
+/* ............................................................. */
+.displayDiv-2 {
+  margin: 28px 20px 12px 0;
+  display: flex;
+  justify-content: flex-end;
+}
+.displayDiv{
+	display: flex !important;
+  justify-content: space-between;
+  padding: 0 5px;
+
+} 
+.displayDiv {
+  margin: 1.4rem 0 0 0;
+  display: flex;
+  justify-content: flex-end;
+}
+.startText {
+  display: flex !important;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 12px 0;
+}
+
+.startBtnPro{
+padding: unset !important;
+width: 151px;
+height: 38px;
+}
+.startBtnPro:hover{
+  background-color: #ff4d49 !important;
+  color: #ffffff !important;
+}
+
+ 
+.css-m6djc-MuiPaper-root-MuiCard-root {
+  border-radius: 10px;
+}
+.startText h2 {
+  font-weight: 500;
+  font-size: 24px;
+  color: rgba(76, 78, 100, 0.87);
+}
+.listText h3 {
+  font-weight: 500;
+  font-size: 20px;
+  color: rgba(76, 78, 100, 0.87);
+}
+
+.cancelBtn {
+  margin: 0 1rem 0 0 !important;
+  background-color: #ffffff !important;
+  color: #ff4d49 !important;
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: uppercase;
+  border: 1px solid #ff4d49 !important;
+  width: 104px;
+  height: 38px;
+  padding: 7px 22px;
+}
+.backBtn{
+  margin-top: 15px !important;
+  background-color: #ffffff !important;
+  color: #ff4d49 !important;
+  border: 1px solid #ff4d49 !important;
+  width: 104px; 
+  height: 38px;
+}
+.AddBtn {
+  background-color: #ff4d49;
+  color: #ffffff;
+  padding: 7px 22px;
+}
+.cancelBtn:hover {
+  background-color: #ffffff !important;
+  color: #ff4d49 !important;
+}
+.AddBtn:hover { 
+  background-color: #ff4d49 !important;
+  color: #ffffff !important;
+  
+}
+.userMoreMenuDiv{
+  display: flex;
+  justify-content: flex-end;
+}
+.css-1d8n32q-MuiButtonBase-root-MuiButton-root.MuiButton-contained {
+  padding: 0.5rem 0.625rem !important;
+}
+.startBtn1:hover {
+  background-color: #ff4d49 !important;
+  color: #ffffff !important;
+}
+.fieldsetMainDiv{
+  margin: -2.8rem 0 0 0;
+}
+.fieldset {
+  border-radius: 6px;
+  border: 1px solid #d9d3d3;
+  margin: 1.2rem 0 0 0;
+
+}
+
+.legend{
+  font-weight: 400;
+font-size: 12px;
+line-height: 12px;
+color: rgba(76, 78, 100, 0.68);
+}
+.editDeleteClr{
+  color: #4C4E648A !important;
+}
+.css-i4bv87-MuiSvgIcon-root{
+  margin: 0 12px 0 0;
+}
+.startBtn2{
+  background-color: #ffffff !important;
+  color: #ff4d49 !important;
+  border: 1px solid #ff4d49 !important;
+  margin: 0 12px 8px 0 !important;
+}
+.AddTemBtn{
+  margin: -12px 0px 0 16px !important;
+  padding: 13.7px !important;
+}
+
+.allLanguageText{
+ margin:  15px 0 15px 5px !important;
+ color: #FF4D49;
+ font-weight: 600;
+}
+.displayAvatar{
+  display: flex !important;
+}
+.AddTemBtn:hover{
+  background-color: #ff4d49 !important;
+  color: #ffffff !important;
+}
+
+.CheckbooxDiv{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 18px;
+}
+.CheckbooxDiv1{
+margin:  0 0 0 8rem !important;
+}
+
+Select{
+  color: #4C4E648A !important;
+}
+
+.css-1myytvp {
+  padding-top: unset !important;
+  padding-bottom: unset !important;
+}
+.css-kk327e-MuiButtonBase-root-MuiButton-root{
+  font-size: 12px !important;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.88), rgba(255, 255, 255, 0.88)), #FF4D49 !important;
+  border-radius: 30px !important;
+  padding: 10px !important;
+}
+
+.demo-space-heading{
+  margin: -8px 0px;
+font-weight: 500;
+font-size: 24px;
+line-height: 133.4%;
+color: rgba(76, 78, 100, 0.87);
+}
+.email_button_RT
+{
+  margin-top: 27px;
+  margin-bottom: -20px;
+}
+.editMirror{
+  border: 1px solid rgba(202, 202, 202, 0.87);
+  border-radius: 10px;
+  padding: 2px;
+ 
+}
+.ͼ2 .cm-activeLine {
+  background-color: unset !important;
+}
+.ͼ2 .cm-activeLineGutter {
+  background-color: unset !important;
+}
+.ͼ1.cm-focused{
+  outline: unset !important;
+}
+.css-vddxnb-MuiSvgIcon-root-MuiSelect-icon{
+  color:rgba(76, 78, 100, 0.54) !important;
+}
+.css-14xyk2g-MuiSvgIcon-root-MuiSelect-icon{
+  color:rgba(76, 78, 100, 0.54) !important;
+}
+.css-1hnylh6-MuiTablePagination-root .MuiIconButton-root.Mui-disabled{
+  color:rgba(2, 2, 2, 0.54) !important;
+
+}
+.css-10aqv8c-MuiSvgIcon-root-MuiSelect-icon{
+  color:rgba(76, 78, 100, 0.54) !important;
+}
+
+hr{
+  border-color: rgb(241 241 241 / 54%);
+}
+.delBtn{
+  margin: 12px 0 0px 19px  !important;
+  width: 24px;
+  height: 24px;
+  
+}
+.delBorder{
+  border: 1px solid #ff4d49;
+  margin: 18px 0px 25px 13px !important;
+  width: 65px;
+  height: 54px;
+  border-radius: 8px;
+  cursor: pointer;
+ 
+
+}
+.DeleteButton {
+  color: #ff4d49;
+  border: 1px solid #ff4d49;
+  padding: 5px 50px;
+}
+/* .dividerLine{
+  margin: 10px 0 0px 0 !important;
+} */
+/* ................................................... */
+ 
+.sideBar-Familytime {
+  width: 75%;
+}
+.css-1x6gcor-MuiButtonBase-root-MuiListItemButton-root
+{
+  padding-right: 25px;
+  padding-left: 20px;
+} 
+.cP-languageMultiple li {
+  list-style: none;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+.cP-lang {
+  width: 1px;
+  /* min-width: 10px; */
+  max-width: 10px;
+  width: 18%;
+}
+.cE-promotion-dflex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 40px;
+}
+.cE-search-input {
+  margin-top: 25px;
+}
+.cE-search-input input {
+  width: 350px;
+}
+.nav-header img {
+  width: 80%;
+}
+.borderd-content {
+  border: 1px solid #d8d8dd;
+  padding: 17px;
+  border-radius: 8px;
+  height: unset;
+  min-height: 170px;
+  margin-top: 20px;
+  position: relative;
+}
+
+.borderd-content .title {
+  background: #fff;
+  padding: 3px;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.4375em;
+  letter-spacing: 0.15px;
+  display: inline-block;
+  position: absolute;
+  top: -6px;
+  left: 0;
+  transform: translate(9px, -9px) scale(0.8);
+}
+
+.borderd-content .content {
+  padding: 10px;
+}
+
+.borderd-content .rdw-editor-toolbar {
+  border: none;
+}
+.borderd-content .public-DraftStyleDefault-block {
+  margin: 0;
+}
+.airlines_logo{
+  width: 200px;
+}
