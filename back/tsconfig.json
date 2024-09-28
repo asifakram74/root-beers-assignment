@@ -11,6 +11,6 @@
     "sourceMap": true,
     "resolveJsonModule": true
   },
-  "include": ["./src", "./tests/**/*.ts", "./tests/intergration/**/*.ts"],
+  "include": ["./src", "./tests/**/*.ts", "./tests/intergration/**/*.ts", "src/routes/.js"],
   "exclude": ["node_modules", "**/*.spec.ts"]
 }

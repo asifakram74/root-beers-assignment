@@ -4,21 +4,21 @@ import React, { useState } from 'react';
 import { Button, CircularProgress, Typography } from '@mui/material';
 import CloudUploadIcon from '@mui/icons-material/CloudUpload';
 
-const FileUpload = ({ onFileSelect }) => {
+const FileUpload = ({ onFileSelect, ...props }) => {
   const [loading, setLoading] = useState(false);
   const [filePath, setFilePath] = useState('');
-
   const handleFileChange = (event) => {
     const file = event.target.files[0];
     if (file) {
-      setFilePath(file);
-      setLoading(true);
-      setTimeout(() => {
-        onFileSelect(file);
-        setLoading(false);
-      }, 1000);
+        setFilePath(file);
+        setLoading(true);
+        setTimeout(() => {
+            onFileSelect(file);
+            setLoading(false);
+        }, 1000);
     }
-  };
+};
+
 
   return (
     <div>
@@ -28,7 +28,13 @@ const FileUpload = ({ onFileSelect }) => {
         startIcon={<CloudUploadIcon />}
         disabled={loading}
       >
-         {loading ? <CircularProgress size={24} /> : 'Upload slip'}
+        {loading ? (
+          <CircularProgress size={24} />
+        ) : (
+          props.notshowing ? '' : 'Upload slip'
+        )}
+
+        {/* {loading ? <CircularProgress size={24} /> : 'Upload slip'} */}
         <input
           type="file"
           hidden
@@ -38,7 +44,7 @@ const FileUpload = ({ onFileSelect }) => {
       {!loading && filePath && (
         <Typography variant="body2">File selected: {filePath.name}</Typography>
       )}
-      
+
     </div>
   );
 };

@@ -1,10 +1,10 @@
 // routes
 import Router from './routes';
 // components
-import './assets/css/App.css'
-import './assets/css/Booking.css'
-import './assets/Booking.css'
+import './assets/css/drinks.css';
 import { Toaster } from 'react-hot-toast';
+import 'swiper/swiper-bundle.css';
+
 
 // ----------------------------------------------------------------------
 
@@ -17,7 +17,8 @@ export default function App() {
         reverseOrder={false}
         limits={1}
         preventDuplicates
-        autoClose={2000} />
+        autoClose={2000}
+      />
     </>
   );
 }
