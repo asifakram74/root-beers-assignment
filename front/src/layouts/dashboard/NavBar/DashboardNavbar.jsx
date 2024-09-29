@@ -27,7 +27,6 @@ const DashboardNavbar = (props) => {
               <li><Link to="/drinks-list">Root Beers</Link></li>
               <li><Link to="#">Login</Link></li>
               <li><Link to="#">SignUp</Link></li>
-              <li><Link to="#">Booking</Link></li>
             </ul>
           </nav>
           {/* <UserDropdown settings={settings} /> */}

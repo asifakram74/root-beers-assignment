@@ -12,7 +12,8 @@ import DashboardApp from './pages/DashboardApp';
 
 // Beer
 import RootBeerList from './pages/RootBeer/RootBeerList';
-import AddEditRootBeer from './pages/RootBeer/AddEditRootBeer';
+import AddRootBeer from './pages/RootBeer/AddRootBeer';
+import EditRootBeer from './pages/RootBeer/EditRootBeer';
 
 // ----------------------------------------------------------------------
 
@@ -34,11 +35,11 @@ export default function Router() {
         },
         {
           path: 'add-drinks',
-          element: <AddEditRootBeer />
+          element: <AddRootBeer />
         },
         {
-          path: 'edit-drinks',
-          element: <AddEditRootBeer />
+          path: 'edit-drinks/:id',
+          element: <EditRootBeer />
         },
       ],
     },

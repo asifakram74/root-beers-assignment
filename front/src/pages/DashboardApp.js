@@ -27,6 +27,8 @@ import StarBorder from '@mui/icons-material/StarBorder';
 
 const DashboardApp = () => {
   const [drinks, setDrinks] = useState([]);
+  const REACT_APP_SECRET_KEY = process.env.REACT_APP_SECRET_KEY;
+
   const renderStars = (rating) => {
     const stars = [];
 
@@ -102,11 +104,15 @@ const DashboardApp = () => {
                       width={171}
                       height={150}
                       alt='Drink Image'
-                      src={item.imageSrc}
+                      src={item.Pictures && item.Pictures.length > 0 ? `${REACT_APP_SECRET_KEY}/${item.Pictures[0].path}` : null}
                       style={{ borderRadius: '8px', objectFit: 'cover' }}
                     />
-                    <Typography variant='h5' sx={{ mt: 2, fontWeight: 'bold', textAlign: 'center' }}>{item.name}</Typography>
-                    <Typography variant='h6' sx={{ color: 'text.secondary' }}>{item.reviewCount} Reviews</Typography>
+                    <Typography variant='h5' sx={{ mt: 2, fontWeight: 'bold', textAlign: 'center' }}>
+                      {item.name}
+                    </Typography>
+                    <Typography variant='h6' sx={{ color: 'text.secondary' }}>
+                      {item.reviewCount} Reviews
+                    </Typography>
                     <Typography variant='h6' sx={{ display: 'flex', alignItems: 'center' }}>
                       {renderStars(item.reviewAverageRating)}
                       <span style={{ marginLeft: '8px' }}>({item.reviewCount})</span>
@@ -126,8 +132,6 @@ const DashboardApp = () => {
                       zIndex: 10, // Ensure the button is above other elements
                       '&:hover': {
                         backgroundColor: '#f33733',
-                      },
-                      '&:hover': {
                         opacity: 1, // Make button visible on hover
                       },
                     }}
@@ -137,6 +141,7 @@ const DashboardApp = () => {
                 </Card>
               </SwiperSlide>
             ))}
+
           </Swiper>
 
         </Box>

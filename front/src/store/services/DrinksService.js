@@ -3,9 +3,9 @@ import Instance from "../axios";
 
 const API_URL = process.env.REACT_APP_API;
 
-const getDrinksWithPictures = async () => {
+const getDrinksWithPictures = async ({ offset, length }) => {
     try {
-        const response = await Instance.get(`${API_URL}${getDrinksAPI}?offset=0&length=10`);
+        const response = await Instance.get(`${API_URL}${getDrinksAPI}?offset=${offset}&length=${length}`);
 
         const drinks = response.data.items;
 
@@ -53,6 +53,16 @@ const postDrinks = async (drinkData) => {
     }
 };
 
+const viewDrink = async (id) => {
+    try {
+        const response = await Instance.get(`${API_URL}${getDrinksAPI}/${id}`);
+        return response.data;
+    } catch (error) {
+        console.error('Failed to fetch drink:', error);
+        throw error;
+    }
+};
+
 const updateDrinks = async (id, data) => {
     try {
         let response = await Instance.put(API_URL + updateDrinksAPI + "/" + id, data);
@@ -66,5 +76,6 @@ export {
     getDrinksWithPictures,
     deleteDrinkWithPicture,
     postDrinks,
+    viewDrink,
     updateDrinks,
 };

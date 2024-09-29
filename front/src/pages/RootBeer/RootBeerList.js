@@ -118,29 +118,15 @@ const Drinks = () => {
 
   const isDrinksNotFound = filteredDrinks.length === 0;
 
-  // useEffect(() => {
-  //   const fetchPicture = async () => {
-  //     try {
-  //       const response = await axios.get(`${REACT_APP_SECRET_KEY}/drinks/${drinks.id}/Pictures`);
-  //       console.log('vgfdgfdgfdgd', response)
-  //       setPicture(response);
-  //     } catch (error) {
-  //       console.error("Error fetching the picture:", error);
-  //     }
-  //   };
-
-  //   fetchPicture();
-  // }, []);
-
   // Get Drinks
   const getDrinksApi = () => {
     setLoading(true);
     let params = {
-      page: page + 1,
-      limit: rowsPerPage,
+      offset: page * rowsPerPage,
+      length: rowsPerPage,
       search: filterName
-    }
-    if (typeof orderBy == 'string') {
+    };
+    if (typeof orderBy === 'string') {
       params.order_by = order;
       params.column_name = orderBy;
     }
@@ -157,7 +143,10 @@ const Drinks = () => {
         }
         setLoading(false);
       })
-
+      .catch((error) => {
+        console.error("Error fetching drinks:", error);
+        setLoading(false);
+      });
   };
 
   // Delete Drinks

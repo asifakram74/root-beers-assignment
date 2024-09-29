@@ -19,7 +19,7 @@ import Page from '../../layouts/components/common/Page';
 import FileUpload from '../../layouts/components/FileUpload';
 
 // Api Services
-import { postDrinks, viewDrinks, updateDrinks } from '../../store/services/DrinksService';
+import { postDrinks } from '../../store/services/DrinksService';
 import { postPictureAPI } from "../../store/api";
 import axios from 'axios';
 
@@ -59,9 +59,6 @@ const AddUpdateDrinks = () => {
     mode: 'onChange',
     resolver: yupResolver(schema),
   });
-
-  useEffect(() => {
-  }, [routeParams.id, reset]);
 
   const handleFileSelect = (filePath) => {
     setValue('file', filePath);
