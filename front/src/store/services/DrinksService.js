@@ -3,6 +3,31 @@ import Instance from "../axios";
 
 const API_URL = process.env.REACT_APP_API;
 
+const getDrinksPictures = async () => {
+    try {
+        const response = await Instance.get(`${API_URL}${getDrinksAPI}?offset=0&length=10`);
+
+        const drinks = response.data.items;
+
+        const drinksWithPictures = await Promise.all(drinks.map(async (drink) => {
+            try {
+                const picturesResponse = await Instance.get(`${API_URL}${getPictureAPI}/${drink.id}/pictures`);
+                const pictures = picturesResponse.data.pictures;
+
+                return { ...drink, pictures };
+            } catch (error) {
+                console.error(`Error fetching pictures for drink ID ${drink.id}:`, error.response ? error.response.data : error.message);
+                return { ...drink, pictures: [] };
+            }
+        }));
+
+        return drinksWithPictures;
+    } catch (error) {
+        console.error("Error fetching drinks:", error.response ? error.response.data : error.message);
+        throw error;
+    }
+};
+
 const getDrinksWithPictures = async ({ offset, length }) => {
     try {
         const response = await Instance.get(`${API_URL}${getDrinksAPI}?offset=${offset}&length=${length}`);
@@ -73,6 +98,7 @@ const updateDrinks = async (id, data) => {
 };
 
 export {
+    getDrinksPictures,
     getDrinksWithPictures,
     deleteDrinkWithPicture,
     postDrinks,

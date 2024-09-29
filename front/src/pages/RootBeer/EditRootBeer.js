@@ -27,7 +27,7 @@ import CircularProgress from '@mui/material/CircularProgress';
 import Scrollbar from '../../layouts/components/common/Scrollbar';
 import { UserMoreMenu, UserListHead } from "../../sections/index";
 import { viewDrink, updateDrinks } from '../../store/services/DrinksService';
-import { getReview, postReview, deleteReview } from '../../store/services/ReviewService';
+import { getReview, postReview } from '../../store/services/ReviewService';
 
 
 // Table Titles
@@ -35,7 +35,6 @@ let TABLE_HEAD = [
   { id: 'name', label: 'Name', alignRight: false },
   { id: 'description', label: 'Description', alignRight: false },
   { id: 'review', label: 'Review', alignRight: false },
-  { id: 'Action', label: 'Action', alignRight: true }
 ];
 
 // Sorting
@@ -185,33 +184,6 @@ const AddUpdateDrinks = () => {
       setLoading(false);
     }
   };
-
-  // Delete Review
-  const handleDeleteReview = (drinkId, reviewId) => {
-    Swal.fire({
-      title: "Are you sure?",
-      text: "You can't undo this action.",
-      icon: "warning",
-      showCancelButton: true,
-      confirmButtonColor: "#3085d6",
-      cancelButtonColor: "#d33",
-      confirmButtonText: "Delete",
-      cancelButtonText: "Cancel",
-    }).then((result) => {
-      if (result.isConfirmed) {
-        deleteReview(drinkId, reviewId)
-          .then(() => {
-            toast.success("Review deleted successfully");
-            getReviewApi(drinkId);
-          })
-          .catch((error) => {
-            toast.error("Failed to delete review");
-            console.error("Delete review error:", error);
-          });
-      }
-    });
-  };
-  
 
   const getReviewApi = (drinkId) => {
     setLoading(true);
@@ -396,12 +368,6 @@ const AddUpdateDrinks = () => {
                           <TableCell align="left">{user_name ?? "N/A"}</TableCell>
                           <TableCell align="left">{description ?? "N/A"}</TableCell>
                           <TableCell align="left">{review ?? "N/A"}</TableCell>
-                          <TableCell align="right">
-                            <UserMoreMenu
-                              callbackDelete={() => handleDeleteReview(drinkId, id)}
-                              editLink={`/edit-reviews/${id}`}
-                            />
-                          </TableCell>
                         </TableRow>
                       );
                     })}

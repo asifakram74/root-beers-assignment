@@ -21,38 +21,7 @@ const postReview = async (drinkId, data) => {
     }
 };
 
-
-const deleteReview = async (drinkId, reviewId) => {
-    try {
-        const response = await Instance.delete(`${API_URL}/drinks/${drinkId}/reviews/${reviewId}`);
-        return response.data;
-    } catch (error) {
-        throw error;
-    }
-};
-
-const updateReview = async (id, data) => {
-    try {
-        let response = await Instance.put(API_URL + updateReviewAPI + "/" + id, data);
-        return response;
-    } catch (error) {
-        throw error;
-    }
-};
-
-const viewReview = async (id) => {
-    try {
-        const response = await Instance.get(API_URL + deleteReviewAPI + "/" + id);
-        return response.data;
-    } catch (error) {
-        throw error;
-    }
-};
-
 export {
     getReview,
-    deleteReview,
-    viewReview,
     postReview,
-    updateReview
 };

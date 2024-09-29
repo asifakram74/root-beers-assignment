@@ -12,8 +12,11 @@ import {
   TablePagination,
   CircularProgress,
   Box,
+  TextField,
+  InputAdornment,
   Button,
 } from '@mui/material';
+import SearchIcon from '@mui/icons-material/Search';
 import Page from '../../layouts/components/common/Page';
 import Scrollbar from '../../layouts/components/common/Scrollbar';
 import { UserMoreMenu, UserListHead } from "../../sections/index";
@@ -189,88 +192,102 @@ const Drinks = () => {
           <Card sx={{ mt: 5 }}>
             <Box sx={{ p: 5, display: 'flex', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'space-between' }}>
               <h2 className='h2_tag'>Drinks List</h2>
-            </Box>
-            <Scrollbar>
-              <TableContainer>
-                <Table>
-                  <UserListHead
-                    order={order}
-                    orderBy={orderBy}
-                    headLabel={TABLE_HEAD}
-                    onRequestSort={handleRequestSort}
-                  />
-                  <TableBody>
-                    {!loading &&
-                      filteredDrinks?.map((row, index) => {
-                        const {
-                          id,
-                          name,
-                          description,
-                          reviewCount,
-                          reviewAverageRating,
-                          Pictures,
-                        } = row;
-                        const picture = Pictures && Pictures.length > 0 ? `${REACT_APP_SECRET_KEY}/${Pictures[0].path}` : null;
-                        return (
-                          <TableRow hover key={row.id} className="table-body">
-                            <TableCell align="left">{id ?? "N/A"}</TableCell>
-                            <TableCell align="left">
-                              {picture ? (
-                                <img
-                                  src={picture}
-                                  alt={name}
-                                  style={{ width: '50px', height: '50px' }}
-                                />
-                              ) : (
-                                "N/A"
-                              )}
-                            </TableCell>
-                            <TableCell align="left">{name ?? "N/A"}</TableCell>
-                            <TableCell align="left">{description ?? "N/A"}</TableCell>
-                            <TableCell align="left">{reviewCount ?? "N/A"}</TableCell>
-                            <TableCell align="left">{reviewAverageRating ?? "N/A"}</TableCell>
-                            <TableCell align="right">
-                              <UserMoreMenu
-                                callbackDelete={() => handleDeleteDrinkWithPicture(id)}
-                                editLink={`/edit-drinks/${id}`}
-                              />
-                            </TableCell>
-                          </TableRow>
-                        );
-                      })}
-                    {loading ? (
-                      <TableRow>
-                        <TableCell colSpan={7} align="center">
-                          <CircularProgress />
-                        </TableCell>
-                      </TableRow>
-                    ) : (
-                      ""
-                    )}
-                    {!loading && filteredDrinks.length === 0 && (
-                      <TableRow>
-                        <TableCell colSpan={7} align="center">
-                          No data
-                        </TableCell>
-                      </TableRow>
-                    )}
-                  </TableBody>
-
-                </Table>
-              </TableContainer>
-              <div>
-                <TablePagination
-                  rowsPerPageOptions={[5, 10, 25]}
-                  component="div"
-                  count={pageData.total}
-                  rowsPerPage={rowsPerPage}
-                  page={page}
-                  labelRowsPerPage="Rows per page:"
-                  onPageChange={handleChangePage}
-                  onRowsPerPageChange={handleChangeRowsPerPage}
+                <TextField
+                  variant="outlined"
+                  label="Search Product"
+                  placeholder="Search Product"
+                  value={filterName}
+                  onChange={handleFilterByName}
+                  InputProps={{
+                    startAdornment: (
+                      <InputAdornment position="start">
+                        <SearchIcon />
+                      </InputAdornment>
+                    ),
+                  }}
                 />
-              </div>
-            </Scrollbar>
+              </Box>
+              <Scrollbar>
+                <TableContainer>
+                  <Table>
+                    <UserListHead
+                      order={order}
+                      orderBy={orderBy}
+                      headLabel={TABLE_HEAD}
+                      onRequestSort={handleRequestSort}
+                    />
+                    <TableBody>
+                      {!loading &&
+                        filteredDrinks?.map((row, index) => {
+                          const {
+                            id,
+                            name,
+                            description,
+                            reviewCount,
+                            reviewAverageRating,
+                            Pictures,
+                          } = row;
+                          const picture = Pictures && Pictures.length > 0 ? `${REACT_APP_SECRET_KEY}/${Pictures[0].path}` : null;
+                          return (
+                            <TableRow hover key={row.id} className="table-body">
+                              <TableCell align="left">{id ?? "N/A"}</TableCell>
+                              <TableCell align="left">
+                                {picture ? (
+                                  <img
+                                    src={picture}
+                                    alt={name}
+                                    style={{ width: '50px', height: '50px' }}
+                                  />
+                                ) : (
+                                  "N/A"
+                                )}
+                              </TableCell>
+                              <TableCell align="left">{name ?? "N/A"}</TableCell>
+                              <TableCell align="left">{description ?? "N/A"}</TableCell>
+                              <TableCell align="left">{reviewCount ?? "N/A"}</TableCell>
+                              <TableCell align="left">{reviewAverageRating ?? "N/A"}</TableCell>
+                              <TableCell align="right">
+                                <UserMoreMenu
+                                  callbackDelete={() => handleDeleteDrinkWithPicture(id)}
+                                  editLink={`/edit-drinks/${id}`}
+                                />
+                              </TableCell>
+                            </TableRow>
+                          );
+                        })}
+                      {loading ? (
+                        <TableRow>
+                          <TableCell colSpan={7} align="center">
+                            <CircularProgress />
+                          </TableCell>
+                        </TableRow>
+                      ) : (
+                        ""
+                      )}
+                      {!loading && filteredDrinks.length === 0 && (
+                        <TableRow>
+                          <TableCell colSpan={7} align="center">
+                            No data
+                          </TableCell>
+                        </TableRow>
+                      )}
+                    </TableBody>
+
+                  </Table>
+                </TableContainer>
+                <div>
+                  <TablePagination
+                    rowsPerPageOptions={[5, 10, 25]}
+                    component="div"
+                    count={pageData.total}
+                    rowsPerPage={rowsPerPage}
+                    page={page}
+                    labelRowsPerPage="Rows per page:"
+                    onPageChange={handleChangePage}
+                    onRowsPerPageChange={handleChangeRowsPerPage}
+                  />
+                </div>
+              </Scrollbar>
           </Card>
         </Container>
       </Page>
