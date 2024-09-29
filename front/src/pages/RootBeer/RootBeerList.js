@@ -72,7 +72,7 @@ function applySortFilter(array, comparator, query) {
 
 const Drinks = () => {
   const [drinks, setDrinks] = useState([]);
-  const API_URL = process.env.REACT_APP_API;
+  const REACT_APP_SECRET_KEY = process.env.REACT_APP_SECRET_KEY;
 
   // PAgination
   const [loading, setLoading] = useState(false);
@@ -121,7 +121,7 @@ const Drinks = () => {
   // useEffect(() => {
   //   const fetchPicture = async () => {
   //     try {
-  //       const response = await axios.get(`${API_URL}/drinks/${drinks.id}/Pictures`);
+  //       const response = await axios.get(`${REACT_APP_SECRET_KEY}/drinks/${drinks.id}/Pictures`);
   //       console.log('vgfdgfdgfdgd', response)
   //       setPicture(response);
   //     } catch (error) {
@@ -146,17 +146,17 @@ const Drinks = () => {
     }
 
     getDrinksWithPictures(params)
-  .then((r) => {
-    if (r) {
-      setDrinks(r);
-      let clone = Object.assign({}, r);
-      delete clone.data;
-      setPageData(clone);
-    } else {
-      setDrinks([]);
-    }
-    setLoading(false);
-  })
+      .then((r) => {
+        if (r) {
+          setDrinks(r);
+          let clone = Object.assign({}, r);
+          delete clone.data;
+          setPageData(clone);
+        } else {
+          setDrinks([]);
+        }
+        setLoading(false);
+      })
 
   };
 
@@ -221,8 +221,7 @@ const Drinks = () => {
                           reviewAverageRating,
                           Pictures,
                         } = row;
-                        const picture = Pictures && Pictures.length > 0 ? `${API_URL}/drinks/${id}/pictures` : null;
-
+                        const picture = Pictures && Pictures.length > 0 ? `${REACT_APP_SECRET_KEY}/${Pictures[0].path}` : null;
                         return (
                           <TableRow hover key={row.id} className="table-body">
                             <TableCell align="left">{id ?? "N/A"}</TableCell>

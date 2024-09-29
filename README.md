@@ -5,14 +5,13 @@ This is a take home UI assignment to build a nice little web app for recording a
 ## Requirements
 
 * Show a dashboard of recently added root beers
-* Show details of a root beer
+* Show details of a root beer (Pending)
 * Allow adding a root beer
-* Allow adding a root beer review
-* Allow searching for a root beer
-* Allow adding images of a root beer
+* Allow adding a root beer review (Pending)
+* Allow searching for a root beer (Pending)
+* Allow adding images of a root beer 
 
 You can be as creative and as fancy as you want with the UI, however functionality and cleanliness will be reviewed as well.
-
 Feel free to use whichever front end framework you prefer (or none!) and any component or 3rd party libraries you wish.
 
 ## Front End
@@ -26,12 +25,10 @@ cd front
 
 ## Back End Server/API
 
-A backend server has been provided for you in `back`.  It provides an API that is documented in Swagger: [http://localhost:4000/api-docs](http://localhost:4000/api-docs).
-
+A backend server has been provided for you in `back`.  It provides an API that is documented in Swagger: [http://localhost:4000/api-docs] (http://localhost:4000/api-docs).
 Some sample data has been pre-populated in the `back/Booking.db` file.
 
 ## Start Backend
-
 In a different command prompt from the one you are running your front end in, run the following commands:
 
 ```sh
